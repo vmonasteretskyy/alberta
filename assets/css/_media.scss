@@ -518,6 +518,9 @@
 }
 
 @media(max-width:575.9px){
+    .mobile_controls{
+        display: flex;
+    }
     .categ_prev{
         grid-template-columns: repeat(1, 1fr);
     }

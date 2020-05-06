@@ -1283,6 +1283,93 @@ footer {
   margin: 0 auto;
   text-align: center; }
 
+.mobile_controls {
+  display: none; }
+
+.input_wrap label {
+  margin-bottom: 7px; }
+
+.input_wrap input {
+  width: 100%;
+  height: 55px;
+  border: 1px solid #a6a6a6;
+  border-radius: 5px;
+  padding-left: 10px; }
+
+.required_star {
+  color: red; }
+
+.oreder_page_title {
+  margin-top: 50px; }
+
+.order_section_title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px; }
+
+.order_user_info .input_wrap {
+  margin-top: 30px; }
+
+.radio_ch {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #a6a6a6;
+  position: relative; }
+  .radio_ch:after {
+    content: '';
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: #000;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%; }
+
+.radio_ch_wrap {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-bottom: 25px; }
+  .radio_ch_wrap input:checked + .radio_ch:after {
+    display: block; }
+  .radio_ch_wrap input {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    z-index: 2;
+    width: 20px;
+    height: 20px; }
+  .radio_ch_wrap label {
+    margin-bottom: 0;
+    margin-left: 10px; }
+
+.order_address label {
+  display: block; }
+
+.order_address .jq-selectbox {
+  width: 100%; }
+
+.order_address .jq-selectbox__select {
+  height: 50px; }
+
+.order_address .jq-selectbox__trigger-arrow {
+  top: 22px; }
+
+.order_address .jq-selectbox__select-text {
+  height: 100%;
+  line-height: 50px; }
+
+.order_address .input_wrap {
+  margin-bottom: 25px; }
+
 @media (min-width: 1650px) {
   .container {
     max-width: 1255px; } }
@@ -1653,6 +1740,9 @@ footer {
     padding-bottom: 0; } }
 
 @media (max-width: 575.9px) {
+  .mobile_controls {
+    display: -webkit-box;
+    display: flex; }
   .categ_prev {
     grid-template-columns: repeat(1, 1fr); }
   .big_banner {
