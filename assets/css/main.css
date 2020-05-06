@@ -1864,4 +1864,7 @@ footer {
     width: auto;
     max-width: 180px; } }
 
+.header_filter ul{
+	z-index: 22;
+}
 /*# sourceMappingURL=main.css.map */
