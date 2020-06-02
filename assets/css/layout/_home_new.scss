@@ -1,0 +1,133 @@
+.header_main{
+.black_btn{
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+}
+}
+.header_filter span{
+    text-transform: uppercase;
+}
+.header_social a {
+    display: block;
+    max-width: 20px;
+}
+main{
+    padding-top: 250px;
+}
+header{
+    position: fixed;
+    width: 100vw;
+    background-color: #fff;
+    z-index: 122;
+    transition: opacity 0.3s;
+    .login {
+        >a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.header_op{
+    opacity: 0.85;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.1);
+    &:hover{
+        opacity: 1;
+    }
+}
+.menu a {
+    font-weight: 400;
+    &:hover{
+        font-weight: 500;
+    }
+}
+.product_wrap{
+    .product_btn{
+        margin: 0;
+    }
+}
+.product_price_sale{
+    padding:3px 7px ;
+    background-color: red;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.products_slide_wrap{
+    padding: 0 10px;
+}
+.product_price{
+    justify-content: space-between;
+    margin: 10px 0; 
+}
+.product_name{
+    height: auto !important;
+    margin-bottom: 10px;
+}
+.product{
+    border: 1px solid #cfcfcf;
+}
+.products_slide_wrap{
+    &:nth-child(odd){
+       .product{
+            background-color: #cfcfcf;
+       } 
+    }
+}
+.product_like{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.product{
+    justify-content: flex-end;
+    &_colors{
+        width: fit-content;
+    }
+}
+.about_home_text{
+    h3{
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
+
+.footer_lists{
+    ul:first-child{
+        margin-right: 20px;
+    }
+}
+
+.footer_bottom .black_btn{
+    border-radius: 0 !important;
+}
+.product_like,.product_color_marks{
+    transition: all 0.3s;
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+.product_img{
+    transition: all 0.4s;
+    &:hover{
+        transform: scale(1.07)
+    }
+}
+.header_main .black_btn{
+    transition: all 0.3s;
+    &:hover{
+        background-color: #000 !important;
+        color: #fff !important;
+    }
+}
+.footer_list a:hover,.header_filter a:hover,.menu a:hover ,.hedaer_lang a:hover{
+    text-decoration: underline;
+}
+
+.header_social a,.like,.basket,.footer_social a  {
+    transition: all 0.3s;
+    &:hover{
+        transform: scale(1.2);
+    }
+}

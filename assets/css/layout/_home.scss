@@ -74,7 +74,7 @@ body{
         height: 56px;
         max-width: 100%;
         width: 200px;
-        border-radius: 10px;
+        cursor: pointer;
         &:visited{
             color: #fff;
         }
@@ -87,7 +87,6 @@ body{
             height: 45px;
             width: 140px;
             font-size: 14px;
-            border-radius: 7px;
 
         }
         @media(max-width:991.9px){
@@ -97,6 +96,8 @@ body{
         }
 }
 @mixin sm_btn{
+    cursor: pointer;
+
         font-size: 1.286rem;
         display: flex;
         justify-content: center;
@@ -104,7 +105,6 @@ body{
         height: 50px;
         max-width: 100%;
         width: 170px;
-        border-radius: 10px;
         color: #fff; 
         @media(max-width:1451px){
             height: 40px;
@@ -113,14 +113,12 @@ body{
         @media(max-width:1199.9px){
             height: 40px;
             width: 120px;
-            border-radius: 7px;
 
         }
         @media(max-width:991.9px){
             height: 33px;
             width: 105px;
             font-size: 11px;
-            border-radius: 5px;
 
         }
 }
@@ -133,16 +131,29 @@ body{
 @include main_btn;
 background-color: #000;
 color: #fff;
+&:hover{
+    background-color: #ff0000;
+}
 }
 .red_btn{
     @include main_btn;
     background-color: #ff0000;
     color: #fff;
+    &:hover{
+        border: 1px solid #fff;
+        background-color: transparent;
+    }
+  
 }
 .transparent_btn{
     @include sm_btn;
     border: 1px solid #000;
     color: #000 !important;
+    transition: all 0.3s;
+    &:hover{
+        background-color: #000 !important;
+        color: #fff !important;
+    }
 }
 .header_search{
     width: 16vw;
@@ -227,26 +238,16 @@ header {
     }
     ul{
         display: none;
-        &::before{
-        @include after;
-        width: calc(100% );
-        height: 6px;
-        border-radius: 2px;
-        background-color: red;
-        left: 0;
-        }
         position: absolute;
         top: 30px;
-        left: 50%;
-        transform: translate(-50%,0);
+        left: 5px;
         padding: 0 36px;
-        border-radius: 2px 2px  10px 10px;
         background-color: #ebebeb;
         width: max-content;
         padding-bottom: 20px;
         li{
             margin-top: 20px;
-            font-weight: 600;
+            text-transform: uppercase;
         }
     }
 }
@@ -305,7 +306,7 @@ header {
     }
 }
 .product{
-    height: 480px;
+    height: 415px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -393,11 +394,10 @@ header {
     }
     &_name{
         font-size: 1.286rem;
-        text-align: center;
         font-weight: 500;
     }
     &_text{
-        padding: 20px;
+        padding: 20px 5px 20px 0;
        
     }
     &_price{
@@ -417,8 +417,13 @@ header {
         margin: 0 auto;
         background-color: #000;
         color: #fff !important;
+
+        &:hover{
+            background-color: #ff0000;
+        }
     }
 }   
+
 .products_slide_wrap{
     padding: 0  20px;
 }
