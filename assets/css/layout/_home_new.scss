@@ -1,3 +1,6 @@
+.container-fluid{
+    padding: 0 70px;
+}
 .header_main{
 .black_btn{
     background-color: transparent;
@@ -129,5 +132,29 @@ header{
     transition: all 0.3s;
     &:hover{
         transform: scale(1.2);
+    }
+}
+.product_color_marks{
+    border: 1px solid #000;
+}
+.about_home_text_img{
+    margin-top: 10px;
+}
+.footer_logo{
+    margin-top: -40px;
+}
+.footer_sec{
+    position: relative;
+    border: none;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    &:after{
+        @include after;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%,0%);
+        width: calc(100% - 140px);
+        height: 1px;
+        background-color: #424242;
     }
 }
