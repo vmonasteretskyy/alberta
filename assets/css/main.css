@@ -793,8 +793,8 @@ h3 {
   .about_home_text {
     margin-bottom: 80px; }
     .about_home_text p {
-      margin-bottom: 25px;
-      font-size: 1.286rem;
+      margin-bottom: 20px;
+      font-size: 18px;
       line-height: 150%; }
 
 .home_testimonials {
@@ -1855,7 +1855,7 @@ header {
     .header_main .container-fluid {
       -webkit-box-pack: center;
               justify-content: center; }
-  .some_new > .container {
+  .some_new > .container-fluid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column; }
@@ -1893,7 +1893,7 @@ header {
   .footer_social p {
     margin-bottom: 10px;
     margin-top: 20px; }
-  .footer_mobile > .container > div {
+  .footer_mobile > .container-fluid > div {
     margin-bottom: 35px; }
   .footer_phone {
     margin-bottom: 0; }
