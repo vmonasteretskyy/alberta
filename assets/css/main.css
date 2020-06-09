@@ -416,7 +416,7 @@ body {
           align-items: center;
   height: 50px;
   max-width: 100%;
-  width: 170px;
+  width: 130px;
   color: #fff;
   border: 1px solid #000;
   color: #000 !important;
@@ -502,7 +502,7 @@ header .like {
   padding: 25px 0;
   padding-bottom: 0; }
   .header_filter_item {
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     position: relative; }
     .header_filter_item:not(:last-child) {
       margin-right: 30px; }
@@ -703,7 +703,7 @@ header .like {
             align-items: center;
     height: 50px;
     max-width: 100%;
-    width: 170px;
+    width: 130px;
     color: #fff;
     margin: 0 auto;
     background-color: #000;
@@ -1036,7 +1036,7 @@ footer {
   max-width: 20px; }
 
 main {
-  padding-top: 250px; }
+  padding-top: 205px; }
 
 header {
   position: fixed;
@@ -1056,8 +1056,6 @@ header {
 
 .menu a {
   font-weight: 400; }
-  .menu a:hover {
-    font-weight: 500; }
 
 .product_wrap .product_btn {
   margin: 0; }
@@ -1171,8 +1169,45 @@ header {
     height: 1px;
     background-color: #424242; }
 
+.login {
+  -webkit-transform: translate(4vw, 0);
+          transform: translate(4vw, 0); }
+
+.header_filter_second_menu {
+  position: absolute;
+  left: calc(100% - 36px) !important;
+  top: 0 !important; }
+
+.header_filter ul li:hover ul {
+  display: block !important; }
+
+.product_color_add span:last-child {
+  display: none; }
+
+.product_color_marks_remove span:last-child {
+  display: -webkit-box;
+  display: flex; }
+
+.product_color_marks_remove span:first-child {
+  display: none; }
+
+.product_color_marks:nth-child(n +3) {
+  display: none; }
+
+.product_color_marks_showed {
+  display: -webkit-box !important;
+  display: flex !important; }
+
+.catalog_row > div:nth-child(even) .product {
+  background-color: #ebebeb; }
+
+.catalog_big_title {
+  font-weight: 300;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 15px;
+  margin-bottom: 30px; }
+
 .bread_crumbs {
-  background-color: #f2f3f4;
   height: 45px;
   display: -webkit-box;
   display: flex;
@@ -1234,7 +1269,6 @@ header {
     width: 47%;
     height: 35px;
     border: 1px solid #000;
-    border-radius: 4px;
     padding-left: 7px; }
 
 .price_filters .irs--flat .irs-bar, .price_filters .irs--flat .irs-line {
@@ -1298,14 +1332,13 @@ header {
 
 /* Style the checkmark/indicator */
 .container_check .checkmark:after {
-  left: 7px;
-  top: 2px;
+  left: 0px;
+  top: 0px;
   width: 5px;
   height: 10px;
-  border: solid #000;
-  border-width: 0 1px 1px 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg); }
+  background-color: #000;
+  width: 100%;
+  height: 100%; }
 
 .sidebar_block_main_title {
   cursor: pointer; }
@@ -1328,7 +1361,6 @@ header {
     height: 50px;
     width: calc(50% - 8px);
     border: 1px solid #000;
-    border-radius: 4px;
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
@@ -1396,7 +1428,7 @@ header {
 
 .catalog_container .transparent_btn {
   margin: 40px auto;
-  width: 280px; }
+  width: 125px; }
 
 .catalog_container .pagination {
   margin: 30px auto;
@@ -1432,7 +1464,6 @@ header {
   width: 100%;
   height: 55px;
   border: 1px solid #a6a6a6;
-  border-radius: 5px;
   padding-left: 10px; }
 
 .required_star {
@@ -1443,7 +1474,7 @@ header {
 
 .order_section_title {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 40px;
   margin-bottom: 20px; }
 
@@ -1509,6 +1540,48 @@ header {
 .order_address .input_wrap {
   margin-bottom: 25px; }
 
+.your_order_wrap {
+  background-color: #fafbfb;
+  padding: 25px 35px 50px 35px; }
+
+.your_order {
+  display: -webkit-box;
+  display: flex; }
+
+.your_order_text {
+  font-size: 16px;
+  margin-top: 5px; }
+
+.your_order_title {
+  margin-bottom: 10px; }
+
+.your_order_dscr li:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0%;
+  content: '-'; }
+
+.your_order_dscr li {
+  position: relative;
+  padding-left: 8px;
+  margin-bottom: 5px; }
+
+.your_order_img {
+  margin-right: 25px;
+  position: relative;
+  overflow: hidden;
+  max-width: 85px;
+  background-color: #fff; }
+
+.your_order_bottom {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between; }
+
 @media (min-width: 1451px) {
   .container {
     max-width: 1360px; } }
@@ -1554,7 +1627,9 @@ header {
     padding: 1px 5px; }
   .header_main {
     padding-bottom: 0;
-    padding-top: 15px; } }
+    padding-top: 15px; }
+  main {
+    padding-top: 170px; } }
 
 @media (max-width: 1199.9px) {
   html {

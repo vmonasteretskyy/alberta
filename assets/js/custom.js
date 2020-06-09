@@ -77,10 +77,10 @@ $(document).ready(function () {
             }
         });
     }
-    // $('.about_home_btn').click(function () {
-    //     $(this).toggleClass('about_home_btn_active')
-    //     $(this).next().slideToggle(300);
-    // });
+    $('.about_home_btn').click(function () {
+        $(this).toggleClass('about_home_btn_active')
+        $(this).next().slideToggle(300);
+    });
     $('.header_mobile_lang div').click(function () {
         $(this).next().slideDown(300);
     });
@@ -116,6 +116,10 @@ $(document).ready(function () {
     $('.showmore_filters ').click(function () {
         $(this).next().slideDown(300);
         $(this).css('display', 'none')
+    });
+    $('.product_color_add').click(function () {
+        $(this).toggleClass('product_color_marks_remove');
+        $(this).nextAll('.product_color_marks').toggleClass('product_color_marks_showed')
     });
     $(".js-range-slider").ionRangeSlider({
         type: "double",

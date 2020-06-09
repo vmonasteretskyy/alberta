@@ -6,7 +6,6 @@
         width: 100%;
         height: 55px;
         border: 1px solid #a6a6a6;
-        border-radius: 5px;
         padding-left: 10px;
     }
 }
@@ -18,7 +17,7 @@
 }
 .order_section_title{
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 500;
     margin-top: 40px;
     margin-bottom: 20px;
 }
@@ -88,4 +87,45 @@
     .input_wrap{
         margin-bottom: 25px;
     }
+}
+// your_order
+
+.your_order_wrap{
+    background-color: #fafbfb;
+    padding: 25px 35px 50px 35px ;
+}
+.your_order{
+    display: flex;
+}
+.your_order_text{
+    font-size: 16px;
+    margin-top: 5px;
+}
+.your_order_title{
+    margin-bottom: 10px;
+}
+.your_order_dscr{
+    li:after{
+        @include after;
+        left: 0;
+        top: 0%;
+        content: '-'
+    }
+    li{
+        position: relative;
+        padding-left: 8px;
+        margin-bottom: 5px;
+    }
+}
+.your_order_img{
+    margin-right: 25px;
+    position: relative;
+    overflow: hidden;
+    max-width: 85px;
+    background-color: #fff;
+}
+.your_order_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

@@ -1,5 +1,4 @@
 .bread_crumbs{
-    background-color: #f2f3f4;
     height: 45px;
     display: flex;
     align-items: center;
@@ -71,7 +70,6 @@
     width: 47%;
     height: 35px;
     border: 1px solid #000;
-    border-radius: 4px;
     padding-left: 7px;
     }
     margin-top: 20px;
@@ -152,15 +150,14 @@
   
   /* Style the checkmark/indicator */
   .container_check .checkmark:after {
-    left: 7px;
-    top: 2px;
+    left: 0px;
+    top: 0px;
     width: 5px;
     height: 10px;
-    border: solid #000;
-    border-width: 0 1px 1px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+ 
   }
   .sidebar_block_main_title{
       cursor: pointer;
@@ -183,7 +180,6 @@
             height: 50px;
             width: calc(50% - 8px);
             border: 1px solid #000;
-            border-radius: 4px;
             display: flex;align-items: center;
             justify-content: center;
       }
@@ -254,7 +250,7 @@
   .catalog_container{
       .transparent_btn{
           margin: 40px auto;
-          width: 280px;
+          width: 125px;
       }
       .pagination{
           margin: 30px auto;

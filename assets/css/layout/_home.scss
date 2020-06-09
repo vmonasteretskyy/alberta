@@ -103,7 +103,7 @@ body{
         align-items: center;
         height: 50px;
         max-width: 100%;
-        width: 170px;
+        width: 130px;
         color: #fff; 
         @media(max-width:1451px){
             height: 40px;
@@ -214,7 +214,7 @@ header {
     padding: 25px 0;
     padding-bottom: 0;
     &_item{
-        padding-bottom: 25px;
+        padding-bottom: 15px;
         &:not(:last-child){
             margin-right: 30px;
         }
