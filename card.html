@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>order</title>
+    <title>card</title>
     <link rel="stylesheet" href="assets/vendors/bootstrap.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
@@ -29,6 +29,7 @@
                     </a>
                 </div>
                 <ul class="menu align_center">
+                    <li><a href="">Отзывы</a></li>
                     <li><a href="">Доставка</a></li>
                     <li><a href="">Оплата</a></li>
                     <li><a href=""> Наши магазины</a></li>
@@ -273,6 +274,7 @@
                             <li><a href="">Зимняя коллекция </a></li>
                         </ul>
                     </div>
+                    <li><a href="">Отзывы</a></li>
                     <a href="">Доставка</a>
                     <a href="">Оплата</a>
                     <a href=""> Наши магазины</a>
@@ -298,273 +300,98 @@
             </div>
         </div>
     </header>
-    <main class="order">
+    <main class="card">
         <div class="bread_crumbs">
             <div class="container-fluid">
                 <a href="">
                     Магазин одежды Alberta
                 </a>
+                <a href="">
+                    Женщинам
+                </a>
+                <a href="">
+                    Зимняя коллекция
+                </a>
                 <span>
-                    Оформление заказа
+                    ПАРКА 8001 Y90 COTTON 080
                 </span>
             </div>
         </div>
         <div class="container-fluid">
-            <h3 class="oreder_page_title">
-                Оформление заказа
-            </h3>
-            <form action="" class="order_form">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="order_section_title">
-                            Покупатель
-                        </p>
-                        <div class="order_user_info">
-                            <div class="input_wrap">
-                                <label for="fio">
-                                    ФИО <span class="required_star">*</span>
-                                </label>
-                                <input type="text" id="fio">
-                            </div>
-                            <div class="input_wrap">
-                                <label for="fio">
-                                    Телефон <span class="required_star">*</span>
-                                </label>
-                                <input type="text" id="fio">
-                            </div>
-                            <div class="input_wrap">
-                                <label for="em">
-                                    Email
-                                </label>
-                                <input type="text" id="em">
-                            </div>
-                        </div>
-                        <div class="sipping">
-                            <p class="order_section_title">
-                                Способ доставки
-                            </p>
-                            <div class="radio_ch_wrap">
-                                <input type="radio" id="d1" name="delivery" value="courier" checked>
-                                <div class="radio_ch">
-                                </div>
-                                <label for="d1">Доставка курьером (г.Киев)</label>
-                            </div>
-                            <div class="radio_ch_wrap">
-                                <input type="radio" id="d2" name="delivery" value="newpost" checked>
-                                <div class="radio_ch">
-                                </div>
-                                <label for="d2">Отправка службой "Новая почта"</label>
-                            </div>
-                            <div class="radio_ch_wrap">
-                                <input type="radio" id="d3" name="delivery" value="self" checked>
-                                <div class="radio_ch">
-                                </div>
-                                <label for="d3"> Самовывоз из магазина</label>
-                            </div>
-                        </div>
-                        <div class="order_address">
-                            <div class="order_address_1">
-                                <div class="input_wrap">
-                                    <label class="order_section_title" for="adr">
-                                        Адрес доставки
-                                    </label>
-                                    <input type="text" id="adr">
-                                </div>
-                            </div>
-                            <div class="order_address_2">
-                                <p class="order_section_title">
-                                    Адрес доставки
-                                </p>
-                                <div class="input_wrap">
-                                    <label for="region">
-                                        Регион <span class="required_star">*</span>
-                                    </label>
-                                    <select name="region" id="region">
-                                        <option value=""></option>
-                                        <option value="region1">region</option>
-                                        <option value="region2">region2</option>
-                                        <option value="region3">region3</option>
-                                    </select>
-                                </div>
-                                <div class="input_wrap">
-                                    <label for="fio">
-                                        Город <span class="required_star">*</span>
-                                    </label>
-                                    <select name="city" id="city">
-                                        <option value=""></option>
-                                        <option value="region1">region</option>
-                                        <option value="region2">region2</option>
-                                        <option value="region3">region3</option>
-                                    </select>
-                                </div>
-                                <div class="input_wrap">
-                                    <label for="post_office">
-                                        Отделение Новой Почты <span class="required_star">*</span>
-                                    </label>
-                                    <select name="
-                                    post office " id="post_office">
-                                        <option value=""></option>
-                                        <option value="region2">region</option>
-                                        <option value="region4">region2</option>
-                                        <option value="region4">region3</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sipping">
-                            <p class="order_section_title">
-                                Способ оплаты
-                            </p>
-                            <div class="radio_ch_wrap">
-                                <input type="radio" id="p1" name="payment" value="cash" checked>
-                                <div class="radio_ch">
-                                </div>
-                                <label for="p1"> Наличными при доставке курьером</label>
-                            </div>
-                            <div class="radio_ch_wrap">
-                                <input type="radio" id="p2" name="payment" value="card" checked>
-                                <div class="radio_ch">
-                                </div>
-                                <label for="p2">Оплата картой</label>
-                            </div>
-                            <div class="radio_ch_wrap">
-                                <input type="radio" id="p3" name="payment" value="Privat" checked>
-                                <div class="radio_ch">
-                                </div>
-                                <label for="p3">Оплата частями от ПриватБанк</label>
-                            </div>
-                        </div>
-                        <div class="sipping">
-                            <p class="order_section_title">
-                                Рассчитать оплату частями
-                            </p>
-                            <div class="radio_ch_wrap">
-                                <input type="checkbox" id="z1" name="z" value="z1" checked>
-                                <div class="radio_ch">
-                                </div>
-                                <label for="z1"> Наличными при доставке курьером</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="your_order_wrap">
-                            <p class="order_section_title">
-                                Ваш заказ
-                            </p>
-                            <div class="your_order">
-                                <div class="your_order_img_wrap">
-                                    <div class="your_order_img">
-                                        <img src="./assets/img/cs.png" alt="">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card_slider_wrap">
+                        <div class="card_slider_sm_wrap">
+                            <div class="card_slider_sm">
+                                <div class="card_slider_sm_slide">
+                                    <div>
+                                        <img src="./assets/img/IMG_0187_2.png" alt="">
                                     </div>
                                 </div>
-                                <div class="your_order_text">
-                                    <p class="your_order_title">
-                                        Дубленка PILOT 8101 Y125 ICE 081
-                                    </p>
-                                    <ul class="your_order_dscr">
-                                        <li>
-                                            Цвет: Чёрный
-                                        </li>
-                                        <li>
-                                            Размер: XL
-                                        </li>
-                                    </ul>
-                                    <div class="your_order_bottom">
-                                        <div class="incr_dec  just_btwn align_center">
-                                            <div class="value-button dec" value="Decrease">
-                                                -
-                                            </div>
-                                            <input type="number" class="result" value="1" disabled />
-                                            <div class="value-button inc" value="Increase">
-                                                +
-                                            </div>
-                                        </div>
-                                        <div class="your_order_price">
-                                            <span>
-                                                5023
-                                            </span>
-                                            <span>
-                                                грн
-                                            </span>
-                                        </div>
+                                <div class="card_slider_sm_slide">
+                                    <div>
+                                        <img src="./assets/img/IMG_0187_2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_slider_sm_slide">
+                                    <div>
+                                        <img src="./assets/img/IMG_0187_2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_slider_sm_slide">
+                                    <div>
+                                        <img src="./assets/img/IMG_0187_2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_slider_sm_slide">
+                                    <div>
+                                        <img src="./assets/img/IMG_0187_2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_slider_sm_slide">
+                                    <div>
+                                        <img src="./assets/img/IMG_0187_2.png" alt="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="your_order">
-                                <div class="your_order_img_wrap">
-                                    <div class="your_order_img">
-                                        <img src="./assets/img/cs.png" alt="">
+                        </div>
+                        <div class="card_slider_lg_wrap">
+                            <div class="card_slider_lg">
+                                <div class="card_slider_lg_slide">
+                                    <div>
+                                        <img src="./assets/img/slider_lg.png" alt="">
                                     </div>
                                 </div>
-                                <div class="your_order_text">
-                                    <p class="your_order_title">
-                                        Дубленка PILOT 8101 Y125 ICE 081
-                                    </p>
-                                    <ul class="your_order_dscr">
-                                        <li>
-                                            Цвет: Чёрный
-                                        </li>
-                                        <li>
-                                            Размер: XL
-                                        </li>
-                                    </ul>
-                                    <div class="your_order_bottom">
-                                        <div class="incr_dec  just_btwn align_center">
-                                            <div class="value-button dec" value="Decrease">
-                                                -
-                                            </div>
-                                            <input type="number" class="result" value="1" disabled />
-                                            <div class="value-button inc" value="Increase">
-                                                +
-                                            </div>
-                                        </div>
-                                        <div class="your_order_price">
-                                            <span>
-                                                5023
-                                            </span>
-                                            <span>
-                                                грн
-                                            </span>
-                                        </div>
+                                <div class="card_slider_lg_slide">
+                                    <div>
+                                        <img src="./assets/img/slider_lg.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_slider_lg_slide">
+                                    <div>
+                                        <img src="./assets/img/slider_lg.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_slider_lg_slide">
+                                    <div>
+                                        <img src="./assets/img/slider_lg.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_slider_lg_slide">
+                                    <div>
+                                        <img src="./assets/img/slider_lg.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="card_slider_lg_slide">
+                                    <div>
+                                        <img src="./assets/img/slider_lg.png" alt="">
                                     </div>
                                 </div>
                             </div>
-                            <div class="your_order_total">
-                                <div class="your_order_total_price">
-                                    <span>
-                                        Итого:
-                                    </span>
-                                    <span>
-                                        10 050 грн
-                                    </span>
-                                </div>
-                                <div class="your_order_total_delivery">
-                                    <span>
-                                        Доставка курьером (г.Киев):
-                                    </span>
-                                    <span>
-                                        Бесплатно
-                                    </span>
-                                </div>
-                            </div>
                         </div>
-                        <div class="input_wrap comment_wrap">
-                            <label for="comment">
-                                Коментарий:
-                            </label>
-                            <textarea name="comment" id="comment"></textarea>
-                        </div>
-                        <div class="confirm_wrap">
-                            <label class="container_check">Я прочитал и согласен с правилами Договора оферты
-                                <input type="checkbox" name="confirm">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-
-                        <input type="submit" class="black_btn  black_btn_submit" value="Оформить заказ">
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </main>
     <footer>

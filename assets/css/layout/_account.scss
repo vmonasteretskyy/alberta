@@ -1,0 +1,64 @@
+.account_page_title{
+    margin-bottom: 40px;
+}
+.account .catalog_row{
+    justify-content: flex-start;
+    margin-top: -40px;
+}
+.account_side{
+    li{
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        transition: all  0.1s ease;
+        &:hover{
+            font-weight: 500;
+            }
+            &.active_pos{
+                font-weight: 600;
+  
+            }
+    }
+}
+.account{
+    padding-bottom: 30px;
+}
+
+// acc 2 
+
+.acc2{
+    .input_wrap{
+        margin-bottom: 25px;
+        input{
+            font-weight: bold;
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                font-weight: 400;
+            }
+              &::-moz-placeholder { /* Firefox 19+ */
+                font-weight: 400;
+              }
+              &:-ms-input-placeholder { /* IE 10+ */
+                font-weight: 400;
+              }
+              &:-moz-placeholder { /* Firefox 18- */
+                font-weight: 400;
+              }
+        }
+    }
+}
+.account{
+    min-height: 85vh;
+}
+.acc2_form{
+    >.row{
+        justify-content: center;
+        &>div:first-child{
+            margin-right: 20px;
+        }
+    }
+    input[type='submit']{
+        margin: 0 auto;
+        width: 300px;
+        margin-top: 50px;
+    }
+}

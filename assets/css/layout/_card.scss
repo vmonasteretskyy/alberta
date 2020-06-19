@@ -1,0 +1,24 @@
+.card_slider_wrap{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.card_slider_sm_wrap{
+    width: 100px;
+    height: 465px;
+    overflow: hidden;
+    margin: -5px 0;
+    &:after{
+        @include after;
+        bottom: -30px;
+        background-image: url('../../img/ard.png');
+        width: 30px;
+        height: 10px;
+    }
+}
+.card_slider_sm_slide{
+    padding: 5px 0;
+}
+.card_slider_lg_wrap{
+    width: calc(100% - 120px);
+}

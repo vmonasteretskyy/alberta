@@ -1,0 +1,134 @@
+.not_found{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-size: 24px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .black_btn{
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 250px;
+    }
+}
+h1{
+    font-size: 120px;
+    font-weight: 300;
+    text-align: center;
+}
+.account {
+    .catalog_row{
+        padding-left: 40px;
+    }
+}
+.acount_order{
+.your_order_text{
+    width: 100%;
+}
+.your_order_bottom{
+    >div:not(:last-child){
+        margin-right: 55px;
+    }
+}
+.your_order_close{
+    margin-top: 3px;
+}
+.your_order_title,.your_order_price{
+    font-weight: 500;
+}
+}
+.incr_dec input{
+    padding-left: 15px;
+}
+.value-button{
+    cursor: pointer;
+}
+
+
+// acc 4 
+.order_history_item{
+    display: block;
+}
+.your_order_delivery_details{
+    background-color: #fafafa;
+    padding: 30px;
+    >div{
+        display: flex;
+        align-items:center;  
+        margin-bottom: 25px;
+        &:not(:last-child){
+            font-weight: 600;
+        }
+        img{
+            margin-right: 10px;
+        }
+    }
+}
+.your_order_history{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.your_order_his_btn{
+    color: #006bd0;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+.your_order_delivered{
+    font-size: 1.2rem;
+    color: #00ab00;
+    font-weight: 500;
+    img{
+        margin-right: 10px;
+    }
+}
+// .your_order_text{
+//     >div{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//     }
+// }
+.order_history_item>div{
+    align-items: flex-start;
+}
+.hist_block{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.order_history_item{
+    >
+.your_order_text{
+    >div{
+        display: flex;
+    }
+}
+.your_order_text {
+    display: block;
+}
+}
+.your_order_delivered{
+    margin-bottom: 15px;
+}
+.your_order_his_btn{
+    cursor: pointer;
+}
+.your_order_his_btn span:last-child,.your_order_delivery_details,.your_order_delivered{
+    display: none;
+}
+.btn_change{
+    &.your_order_his_btn span:first-child{
+        display: none;
+    }
+    &.your_order_his_btn span:last-child{
+        display: block;
+    }
+}
+    .acount_title_h{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }                    

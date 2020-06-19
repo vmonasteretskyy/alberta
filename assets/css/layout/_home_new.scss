@@ -114,7 +114,8 @@ header{
 }
     transition: all 0.4s;
     &:hover{
-        transform: scale(1.07)
+        z-index: 2;
+        transform: scale(1.04)
     }
 }
 .header_main .black_btn{
@@ -194,11 +195,9 @@ header{
 
 
 .catalog_row{
-    >div:nth-child(even){
         .product{
             background-color: #ebebeb;
         } 
-    }
 }
 .catalog_big_title{
     font-weight: 300;
@@ -247,3 +246,40 @@ header{
 .about_home_text p{
     text-align: justify;
 }
+.bread_crumbs{
+    margin-top: 10px;
+}
+.catalog_row{
+    .col-md-9{
+        padding-left: 70px;
+    }
+}
+.prod_col{
+    padding: 0 1px;
+}
+.product_img{
+    position: static;
+}
+.product_colors{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.product{
+    padding: 0 !important;
+    height: auto !important;
+}
+.sticky {
+    position: fixed;
+    z-index: 101;
+    top: 120px;
+  }
+  .stop {
+    position: relative;
+    z-index: 101;
+  }
+
+  .catalog_sort{
+      background-color: #fff;
+      z-index: 2;
+  }

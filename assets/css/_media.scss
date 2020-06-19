@@ -22,10 +22,10 @@
         font-size: 13px;
     }
     .big_banner{
-        height: 350px;
+        height: 450px;
     }
     .product{
-        height: 350px;
+        height: 380px;
     }
     .products_slider .slick-arrow{
         width: 30px;
@@ -79,7 +79,9 @@
     .about_home_text p{
         font-size: 15px;
     }
-
+    .login{
+        transform: translate(90px, 0);
+    }
 }
 @media(max-width:1199.9px){
     .login{
@@ -261,6 +263,74 @@
 .product_wrap{
     padding-top: 10px;
 }
+.your_order_wrap{
+   padding:  25px 20px 30px 20px;
+    }
+    .incr_dec div{
+        width: 35px;
+    }
+    .incr_dec{
+        height: 35px;
+    }
+    .incr_dec input{
+        width: 50px;
+    }
+    .your_order_price{
+        font-size: 14px;
+    }
+    .your_order_price span:last-child{
+        font-size: 11px;
+    }
+    .your_order_text{
+        font-size: 14px;
+    }
+    .your_order{
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+    .your_order_total_price{
+        margin-bottom: 10px;
+    }
+    .input_wrap input{
+        height: 35px;
+    }
+    .order_section_title{
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+    .input_wrap textarea{
+        height: 130px;
+    }
+    .comment_wrap{
+        margin-top: 30px;
+    }
+    .order_address .jq-selectbox__select{
+        height: 35px;
+    }
+    .order_address .jq-selectbox__trigger-arrow{
+        top: 14px;
+    }
+    .order_address .jq-selectbox__select-text{
+        line-height: 35px;
+    }
+    .account_side li{
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .acc2_form input[type='submit']{
+        width: 250px;
+    }
+    h1{
+        font-size: 100px;
+    }
+    .not_found{
+        p{
+            font-size: 20px;
+        }
+    }
+    .acount_order .your_order_bottom > div:not(:last-child){
+        margin-right: 20px;
+    }
 }
 @media(max-width:991.9px){
     .login{
@@ -475,6 +545,40 @@
     .price_filters_inputs input{
         height: 25px;
     }
+    .your_order_img{
+        margin-right: 15px;
+    }
+    .your_order_img{
+        max-width: 55px;
+    }
+    .your_order_text{
+        margin-top: 0;
+    }
+    .your_order_text{
+        font-size: 12px;
+    }
+    .your_order_title{
+        margin-bottom: 5px;
+    }
+    .your_order_price{
+        font-size: 14px;
+    }
+    .your_order_price span:last-child{
+        font-size: 12px;
+    }
+    .oreder_page_title{
+        margin-top: 30px;
+    }
+    .acc2_form > .row > div:first-child{
+        margin-right: 0;
+    }
+    .acc2_form input[type='submit']{
+        width: 180px;
+        margin-top: 10px;
+    }
+    .acount_title_h{
+        font-size: 16px;
+    }
 }
 @media(max-width:767.9px){
     .catalog_sort{
@@ -636,8 +740,32 @@
         margin-top: 30px;
         margin-bottom: 10px;
     }
+    .account_page_title{
+        text-align: center;
+    }
+    .account_side{
+        margin-bottom: 40px;
+    }
+    .account{
+        min-height: auto;
+    }
+    .not_found{
+       height: calc(100vh - 120px);
+    }
+    .account {
+        .catalog_row{
+            padding-left: 0px;
+        }
+    }
 }
 @media(max-width:575.9px){
+    .oreder_page_title{
+        margin-top: 20px;
+    }
+    .order_section_title{
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
     .mobile_controls{
         display: flex;
     }
@@ -801,11 +929,61 @@
    .catalog_sidebar_buttons{
        margin-bottom: 20px;
    }
-   .catalog .product_wrap{
+     .product_wrap{
        max-width: 300px;
        margin: 0 auto;
    }
+   .oreder_page_title{
+       text-align: center;
+   }
+   .your_order_img{
+       width: 50px;
+   }
+   .container-fluid{
+       padding: 15px;
+   }
+   .your_order_img{
+       margin-right: 10px;
+   }
+   .incr_dec{
+       height: 25px;
+   }
+   .incr_dec div{
+       width: 25px;
+   }
+   .incr_dec input{
+       width: 35px;
+   }
+   .not_found{
+    height: calc(100vh - 140px);
+ }
+ .acount_order{
+     .your_order_text{
+         flex-wrap: wrap;
+     }
+     .your_order_bottom{
+         width: 100%;
+     }
+ }
+ .hist_block{
+     display: block;
+ }
+ .your_order_his_btn{
+     margin-bottom: 5px;
+ }
+ .your_order_delivered{
+     margin: 10px 0;
+ }
+ .acount_title_h{
+     font-size: 16px;
+     margin-bottom: 20px;
+ }
+ .account_side li{
+     font-size: 14px;
+     margin-bottom: 15px;
+ }
 }
+
 @media(max-width:450px){
     .product{
         height: 270px;
