@@ -1,4 +1,41 @@
 $(document).ready(function () {
+    if ($('main').hasClass('order')) {
+        function Checkdel(e) {
+            if ($('input[name="delivery"]:checked').val() == 'newpost') {
+                $('.order_address_1').css('display', 'none');
+                $('.order_address_2').css('display', 'block');
+                $('.order_address_3').css('display', 'none');
+                $('.payment_type1').css('display', 'none');
+                $('.payment_type2').css('display', 'block');
+                $('.payment_type3').css('display', 'none');
+            }
+            else if ($('input[name="delivery"]:checked').val() == 'self') {
+                $('.order_address_2').css('display', 'none');
+                $('.order_address_1').css('display', 'none');
+                $('.order_address_3').css('display', 'none');
+                $('.payment_type1').css('display', 'none');
+                $('.payment_type2').css('display', 'none');
+                $('.payment_type3').css('display', 'block');
+            }
+            else if ($('input[name="delivery"]:checked').val() == 'courier_newpost') {
+                $('.order_address_1').css('display', 'none');
+                $('.order_address_2').css('display', 'none');
+                $('.order_address_3').css('display', 'block');
+                $('.payment_type1').css('display', 'block');
+                $('.payment_type2').css('display', 'none');
+                $('.payment_type3').css('display', 'none');
+
+            }
+            else {
+                $('.order_address_2').css('display', 'none');
+                $('.order_address_1').css('display', 'block');
+                $('.payment_type1').css('display', 'block');
+                $('.payment_type2').css('display', 'none');
+                $('.payment_type3').css('display', 'none');
+            }
+        }
+        Checkdel();
+    }
     if ($(window).width() > 76) {
         $('.header_filter_item ').mouseenter(function () {
             $(this).children('ul').slideDown(300);
@@ -91,19 +128,7 @@ $(document).ready(function () {
         $('.catalog_sort').slideDown(300);
     });
     $('input[name="delivery"]').change(function (e) {
-        console.log(e);
-        if ($('input[name="delivery"]:checked').val() == 'newpost') {
-            $('.order_address_1').css('display', 'none');
-            $('.order_address_2').css('display', 'block');
-        }
-        else if ($('input[name="delivery"]:checked').val() == 'self') {
-            $('.order_address_2').css('display', 'none');
-            $('.order_address_1').css('display', 'none');
-        }
-        else {
-            $('.order_address_2').css('display', 'none');
-            $('.order_address_1').css('display', 'block');
-        }
+        Checkdel();
     });
     $('.sidebar_block_title:not(.sidebar_block_main_title) .more_or_less').click(function () {
         $(this).parent().next().slideToggle(300);
@@ -141,10 +166,28 @@ $(document).ready(function () {
             vertical: true,
             asNavFor: '.card_slider_lg',
             focusOnSelect: true,
-            arrows: false
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1199.9,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
+                        vertical: false,
+
+                    }
+                },
+                {
+                    breakpoint: 575.9,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        vertical: false,
+                    }
+                },
+            ]
         });
     }
-
     // 
     if ($('main').hasClass('catalog')) {
         if ($(window).width() > 767.9) {
@@ -205,6 +248,24 @@ $(document).scroll(function () {
     else {
         $('header').removeClass('header_op');
     }
-
+    $('.card_item_rating div').hover(function () {
+        $(this).prevAll('div').addClass('raiting_hover');
+    });
+    $('.card_item_rating div').mouseleave(function () {
+        $(this).prevAll('div').removeClass('raiting_hover');
+    });
+    $('.card_item_rating div').click(function () {
+        $(this).prevAll('div').removeClass('raiting_hover');
+        $(this).prevAll('div').addClass('rated');
+        $(this).nextAll('div').removeClass('rated');
+        $(this).addClass('rated');
+    });
+    $('.card_slider_small_arrow').click(function () {
+        $('.card_slider_sm_wrap').css('height', 'auto');
+        $(this).css('display', 'none');
+    })
+    $('.card_sizes_btn').click(function () {
+        $(this).css('display', 'none')
+        $('.card_size_table').slideDown(400);
+    })
 });
-

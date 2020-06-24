@@ -5,13 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>order</title>
+    <title>Home</title>
     <link rel="stylesheet" href="assets/vendors/bootstrap.min.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/vendors/slick.css" />
     <link rel="stylesheet" type="text/css" href="assets/vendors/jquery.formstyler.css" />
     <link rel="stylesheet" type="text/css" href="assets/vendors/jquery.formstyler.theme.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendors/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" type="text/css" href="assets/vendors/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 </head>
@@ -29,6 +28,7 @@
                     </a>
                 </div>
                 <ul class="menu align_center">
+                    <li><a href="">Отзывы</a></li>
                     <li><a href="">Доставка</a></li>
                     <li><a href="">Оплата</a></li>
                     <li><a href=""> Наши магазины</a></li>
@@ -273,6 +273,7 @@
                             <li><a href="">Зимняя коллекция </a></li>
                         </ul>
                     </div>
+                    <li><a href="">Отзывы</a></li>
                     <a href="">Доставка</a>
                     <a href="">Оплата</a>
                     <a href=""> Наши магазины</a>
@@ -298,320 +299,199 @@
             </div>
         </div>
     </header>
-    <main class="order">
-        <div class="bread_crumbs">
-            <div class="container-fluid">
-                <a href="">
-                    Магазин одежды Alberta
-                </a>
-                <span>
-                    Оформление заказа
-                </span>
+    <div class="popups">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+            Forgot password
+        </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter2">
+            корзина
+        </button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter3">
+            registr
+        </button>
+        <!-- Modal -->
+        <div class="modal fade forgot_password" id="exampleModalCenter1" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <p class="forgot_password_title">
+                                ЗАБЫЛИ ПАРОЛЬ
+                            </p>
+                            <p class="forgot_password_text">
+                                Для смены пароля перейдите, пожалуйста, по ссылке,
+                                указанной в письме, которое будет отправленно на Ваш
+                                почтовый ящик.
+                            </p>
+                            <form action="">
+                                <div class="input_wrap">
+                                    <label for="fio">
+                                        Email <span class="required_star">*</span>
+                                    </label>
+                                    <input type="text" id="fio">
+                                </div>
+                                <input type="submit" class="black_btn" value="Отправить">
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <h3 class="oreder_page_title">
-                Оформление заказа
-            </h3>
-            <form action="" class="order_form">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="order_section_title">
-                            Покупатель
-                        </p>
-                        <div class="order_user_info">
-                            <div class="input_wrap">
-                                <label for="fio">
-                                    ФИО <span class="required_star">*</span>
-                                </label>
-                                <input type="text" id="fio">
-                            </div>
-                            <div class="input_wrap">
-                                <label for="fio">
-                                    Телефон <span class="required_star">*</span>
-                                </label>
-                                <input type="text" id="fio">
-                            </div>
-                            <div class="input_wrap">
-                                <label for="em">
-                                    Email
-                                </label>
-                                <input type="text" id="em">
-                            </div>
-                        </div>
-                        <div class="sipping">
-                            <p class="order_section_title">
-                                Способ доставки
-                            </p>
-                            <div class="radio_ch_wrap">
-                                <input type="radio" id="d1" name="delivery" value="courier_kiev" checked>
-                                <div class="radio_ch">
-                                </div>
-                                <label for="d1">Доставка курьером (г.Киев)</label>
-                            </div>
-                            <div class="radio_ch_wrap">
-                                <input type="radio" id="d2" name="delivery" value="newpost" checked>
-                                <div class="radio_ch">
-                                </div>
-                                <label for="d2">Отправка службой "Новая почта"</label>
-                            </div>
-                            <div class="radio_ch_wrap">
-                                <input type="radio" id="d3" name="delivery" value="self" checked>
-                                <div class="radio_ch">
-                                </div>
-                                <label for="d3"> Самовывоз из магазина</label>
-                            </div>
-                            <div class="radio_ch_wrap">
-                                <input type="radio" id="d4" name="delivery" value="courier_newpost" checked>
-                                <div class="radio_ch">
-                                </div>
-                                <label for="d4"> Доставка курьером "Новая почта" </label>
-                            </div>
-                        </div>
-                        <div class="order_address">
-                            <div class="order_address_1">
-                                <div class="input_wrap">
-                                    <label class="order_section_title" for="adr">
-                                        Адрес доставки
-                                    </label>
-                                    <input type="text" id="adr">
-                                </div>
-                            </div>
-                            <div class="order_address_2">
-                                <p class="order_section_title">
-                                    Адрес доставки
-                                </p>
-                                <div class="input_wrap">
-                                    <label for="region">
-                                        Регион <span class="required_star">*</span>
-                                    </label>
-                                    <select name="region" id="region">
-                                        <option value=""></option>
-                                        <option value="region1">region</option>
-                                        <option value="region2">region2</option>
-                                        <option value="region3">region3</option>
-                                    </select>
-                                </div>
-                                <div class="input_wrap">
-                                    <label for="fio">
-                                        Город <span class="required_star">*</span>
-                                    </label>
-                                    <select name="city" id="city">
-                                        <option value=""></option>
-                                        <option value="region1">region</option>
-                                        <option value="region2">region2</option>
-                                        <option value="region3">region3</option>
-                                    </select>
-                                </div>
-                                <div class="input_wrap">
-                                    <label for="post_office">
-                                        Отделение Новой Почты <span class="required_star">*</span>
-                                    </label>
-                                    <select name="
-                                    post office " id="post_office">
-                                        <option value=""></option>
-                                        <option value="region2">region</option>
-                                        <option value="region4">region2</option>
-                                        <option value="region4">region3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="order_address_3">
-                                <p class="order_section_title">
-                                    Адрес доставки
-                                </p>
-                                <div class="input_wrap">
-                                    <label for="region">
-                                        Регион <span class="required_star">*</span>
-                                    </label>
-                                    <select name="region" id="region">
-                                        <option value=""></option>
-                                        <option value="region1">region</option>
-                                        <option value="region2">region2</option>
-                                        <option value="region3">region3</option>
-                                    </select>
-                                </div>
-                                <div class="input_wrap">
-                                    <label for="fio">
-                                        Город <span class="required_star">*</span>
-                                    </label>
-                                    <select name="city" id="city">
-                                        <option value=""></option>
-                                        <option value="region1">region</option>
-                                        <option value="region2">region2</option>
-                                        <option value="region3">region3</option>
-                                    </select>
-                                </div>
-                                <div class="input_wrap">
-                                    <label class="" for="adr">
-                                        Адрес <span class="required_star">*</span>
-                                    </label>
-                                    <input type="text" id="adr">
-                                </div>
 
+        <!-- Modal -->
+        <div class="modal fade basket_modal" id="exampleModalCenter2" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Корзина покупок</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="your_order acount_order">
+                            <div class="your_order_img_wrap">
+                                <div class="your_order_img">
+                                    <img src="./assets/img/cs.png" alt="">
+                                </div>
+                            </div>
+                            <div class="your_order_text just_btwn">
+                                <div>
+                                    <p class="your_order_title">
+                                        Дубленка PILOT 8101 Y125 ICE 081
+                                    </p>
+                                    <ul class="your_order_dscr">
+                                        <li>
+                                            Цвет: Чёрный
+                                        </li>
+                                        <li>
+                                            Размер: XL
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="your_order_bottom align_center">
+                                    <div class="incr_dec  just_btwn align_center">
+                                        <div class="value-button dec" value="Decrease">
+                                            -
+                                        </div>
+                                        <input type="number" class="result" value="1" disabled />
+                                        <div class="value-button inc" value="Increase">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div class="your_order_price">
+                                        <span>
+                                            5023
+                                        </span>
+                                        <span>
+                                            грн
+                                        </span>
+                                    </div>
+                                    <div class="acount_order_close">
+                                        <img src="./assets/img/closered.png" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="sipping payment_type1">
-                            <p class="order_section_title">
-                                Способ оплаты
-                            </p>
-                            <div class="radio_ch_wrap">
-                                <input type="radio" id="p1" name="payment" value="cash" checked>
-                                <div class="radio_ch">
+                        <div class="your_order acount_order">
+                            <div class="your_order_img_wrap">
+                                <div class="your_order_img">
+                                    <img src="./assets/img/cs.png" alt="">
                                 </div>
-                                <label for="p1"> Наличными при доставке курьером</label>
                             </div>
-
+                            <div class="your_order_text just_btwn">
+                                <div>
+                                    <p class="your_order_title">
+                                        Дубленка PILOT 8101 Y125 ICE 081
+                                    </p>
+                                    <ul class="your_order_dscr">
+                                        <li>
+                                            Цвет: Чёрный
+                                        </li>
+                                        <li>
+                                            Размер: XL
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="your_order_bottom align_center">
+                                    <div class="incr_dec  just_btwn align_center">
+                                        <div class="value-button dec" value="Decrease">
+                                            -
+                                        </div>
+                                        <input type="number" class="result" value="1" disabled />
+                                        <div class="value-button inc" value="Increase">
+                                            +
+                                        </div>
+                                    </div>
+                                    <div class="your_order_price">
+                                        <span>
+                                            5023
+                                        </span>
+                                        <span>
+                                            грн
+                                        </span>
+                                    </div>
+                                    <div class="acount_order_close">
+                                        <img src="./assets/img/closered.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="sipping payment_type2">
-                            <p class="order_section_title">
-                                Способ оплаты
-                            </p>
-                            <div class="radio_ch_wrap">
-                                <input type="radio" id="p11" name="payment" value="cash" checked>
-                                <div class="radio_ch">
-                                </div>
-                                <label for="p11">Наложенный платеж</label>
-                            </div>
-                            <div class="radio_ch_wrap">
-                                <input type="radio" id="p12" name="payment" value="card" checked>
-                                <div class="radio_ch">
-                                </div>
-                                <label for="p12">Передоплата</label>
-                            </div>
-                        </div>
-                        <div class="sipping payment_type3">
-                            <p class="order_section_title">
-                                Способ оплаты
-                            </p>
-                            <div class="radio_ch_wrap">
-                                <input type="radio" id="p21" name="payment" value="cash" checked>
-                                <div class="radio_ch">
-                                </div>
-                                <label for="p21">Наличными в магазине</label>
-                            </div>
+                        <div class="basket_footer_total">
+                            <span>
+                                Итого:
+                            </span>
+                            <span>
+                                10 500грн
+                            </span>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="your_order_wrap">
-                            <p class="order_section_title">
-                                Ваш заказ
-                            </p>
-                            <div class="your_order">
-                                <div class="your_order_img_wrap">
-                                    <div class="your_order_img">
-                                        <img src="./assets/img/cs.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="your_order_text">
-                                    <p class="your_order_title">
-                                        Дубленка PILOT 8101 Y125 ICE 081
-                                    </p>
-                                    <ul class="your_order_dscr">
-                                        <li>
-                                            Цвет: Чёрный
-                                        </li>
-                                        <li>
-                                            Размер: XL
-                                        </li>
-                                    </ul>
-                                    <div class="your_order_bottom">
-                                        <div class="incr_dec  just_btwn align_center">
-                                            <div class="value-button dec" value="Decrease">
-                                                -
-                                            </div>
-                                            <input type="number" class="result" value="1" disabled />
-                                            <div class="value-button inc" value="Increase">
-                                                +
-                                            </div>
-                                        </div>
-                                        <div class="your_order_price">
-                                            <span>
-                                                5023
-                                            </span>
-                                            <span>
-                                                грн
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="your_order">
-                                <div class="your_order_img_wrap">
-                                    <div class="your_order_img">
-                                        <img src="./assets/img/cs.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="your_order_text">
-                                    <p class="your_order_title">
-                                        Дубленка PILOT 8101 Y125 ICE 081
-                                    </p>
-                                    <ul class="your_order_dscr">
-                                        <li>
-                                            Цвет: Чёрный
-                                        </li>
-                                        <li>
-                                            Размер: XL
-                                        </li>
-                                    </ul>
-                                    <div class="your_order_bottom">
-                                        <div class="incr_dec  just_btwn align_center">
-                                            <div class="value-button dec" value="Decrease">
-                                                -
-                                            </div>
-                                            <input type="number" class="result" value="1" disabled />
-                                            <div class="value-button inc" value="Increase">
-                                                +
-                                            </div>
-                                        </div>
-                                        <div class="your_order_price">
-                                            <span>
-                                                5023
-                                            </span>
-                                            <span>
-                                                грн
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="your_order_total">
-                                <div class="your_order_total_price">
-                                    <span>
-                                        Итого:
-                                    </span>
-                                    <span>
-                                        10 050 грн
-                                    </span>
-                                </div>
-                                <div class="your_order_total_delivery">
-                                    <span>
-                                        Доставка курьером (г.Киев):
-                                    </span>
-                                    <span>
-                                        Бесплатно
-                                    </span>
-                                </div>
-                            </div>
+                    <div class="basket_footer">
+
+                        <div class="basket_footer_btns just_btwn align_center">
+                            <a href="" class="transparent_btn">Продолжить покупки</a>
+                            <a href="" class="black_btn">Оформить заказ</a>
+
                         </div>
-                        <div class="input_wrap comment_wrap">
-                            <label for="comment">
-                                Коментарий:
-                            </label>
-                            <textarea name="comment" id="comment"></textarea>
-                        </div>
-                        <div class="confirm_wrap">
-                            <label class="container_check">Я прочитал и согласен с правилами Договора оферты
-                                <input type="checkbox" name="confirm">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                        <input type="submit" class="black_btn  black_btn_submit" value="Оформить заказ">
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
-    </main>
+
+        <!-- Modal -->
+        <div class="modal fade forgot_password reg_modal" id="exampleModalCenter3" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+                            <p class="forgot_password_title">
+                                Регрстрация прошла успешно
+                            </p>
+                            <p class="forgot_password_text">
+                                Перейти в <a href=""> Личный кабинет</a>
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container-fluid just_btwn">
             <div class="footer_title">
@@ -829,14 +709,17 @@
         </div>
 
     </footer>
+
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/jquery.mask.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <script src="assets/js/jquery.formstyler.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/jquery.parallax.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
 
