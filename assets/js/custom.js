@@ -21,8 +21,8 @@ $(document).ready(function () {
                 $('.order_address_1').css('display', 'none');
                 $('.order_address_2').css('display', 'none');
                 $('.order_address_3').css('display', 'block');
-                $('.payment_type1').css('display', 'block');
-                $('.payment_type2').css('display', 'none');
+                $('.payment_type1').css('display', 'none');
+                $('.payment_type2').css('display', 'block');
                 $('.payment_type3').css('display', 'none');
 
             }

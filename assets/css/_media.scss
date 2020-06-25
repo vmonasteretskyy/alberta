@@ -1307,6 +1307,15 @@
        font-size: 12px;
    }
 }
+.bread_crumbs{
+    >.container-fluid{
+        display: flex;
+        justify-content: center;
+    }
+    span{
+        margin-left: 5px;
+    }
+}
 }
 
 @media(max-width:450px){

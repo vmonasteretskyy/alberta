@@ -3300,7 +3300,14 @@ h4 {
     margin-bottom: 20px; }
   .forgot_password_text {
     margin-bottom: 15px;
-    font-size: 12px; } }
+    font-size: 12px; }
+  .bread_crumbs > .container-fluid {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center; }
+  .bread_crumbs span {
+    margin-left: 5px; } }
 
 @media (max-width: 450px) {
   .product {
