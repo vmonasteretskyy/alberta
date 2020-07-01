@@ -306,3 +306,19 @@ h1{
         }
     }
 }
+.more-text{
+    padding: 30px 0px;
+    img{
+        margin: 0 auto;
+    }
+    +div{
+        display: none;
+    }
+}
+.basket_item_img{
+    border: 1px solid #cfcfcf;
+    transition: 0.3s all;
+    &:hover{
+        transform:scale(1.05);
+    }
+}
